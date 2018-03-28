@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" name="Failed suite [example suite 1]">
+  <test name="AuthApitest(failed)">
+    <classes>
+      <class name="com.loginradius.GetAcessToken">
+        <methods>
+          <include name="getacesstoken"/>
+        </methods>
+      </class> <!-- com.loginradius.GetAcessToken -->
+    </classes>
+  </test> <!-- AuthApitest(failed) -->
+</suite> <!-- Failed suite [example suite 1] -->

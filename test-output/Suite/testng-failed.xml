@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.APITESTING.SCRIPTS.MegaMenuShows">
+        <methods>
+          <include name="Test_04_negative"/>
+          <include name="Test_03_positive"/>
+        </methods>
+      </class> <!-- com.APITESTING.SCRIPTS.MegaMenuShows -->
+      <class name="com.APITESTING.SCRIPTS.ConfigJson">
+        <methods>
+          <include name="Test_01_positive"/>
+        </methods>
+      </class> <!-- com.APITESTING.SCRIPTS.ConfigJson -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

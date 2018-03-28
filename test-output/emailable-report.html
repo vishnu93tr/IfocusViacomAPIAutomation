@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">example suite 1</th></tr>
+<tr><td><a href="#t0">AuthApitest</a></td><td class="num">11</td><td class="num">0</td><td class="num attn">1</td><td class="num">39,148</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">example suite 1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">AuthApitest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.loginradius.GetAcessToken</td><td><a href="#m0">getacesstoken</a></td><td rowspan="1">1522223901041</td><td rowspan="1">1866</td></tr><tr><th colspan="4">AuthApitest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.loginradius.Authentication</td><td><a href="#m1">authentication_positive</a></td><td rowspan="1">1522223885843</td><td rowspan="1">3681</td></tr><tr class="passedodd"><td rowspan="1">com.loginradius.CheckEmail</td><td><a href="#m2">checkemail_positive</a></td><td rowspan="1">1522223889526</td><td rowspan="1">4269</td></tr><tr class="passedeven"><td rowspan="1">com.loginradius.Create</td><td><a href="#m3">create_positive</a></td><td rowspan="1">1522223893796</td><td rowspan="1">2948</td></tr><tr class="passedodd"><td rowspan="1">com.loginradius.EditUser</td><td><a href="#m4">edituser</a></td><td rowspan="1">1522223896745</td><td rowspan="1">4294</td></tr><tr class="passedeven"><td rowspan="1">com.loginradius.ExcelReport</td><td><a href="#m5">excelreport</a></td><td rowspan="1">1522223919122</td><td rowspan="1">5851</td></tr><tr class="passedodd"><td rowspan="1">com.loginradius.GetAuthKey</td><td><a href="#m6">getauthkey_positive</a></td><td rowspan="1">1522223902910</td><td rowspan="1">4402</td></tr><tr class="passedeven"><td rowspan="1">com.loginradius.GetProfileUser</td><td><a href="#m7">getprofile_positive</a></td><td rowspan="1">1522223907313</td><td rowspan="1">1322</td></tr><tr class="passedodd"><td rowspan="1">com.loginradius.KuserLogin</td><td><a href="#m8">kuserlogin_positive</a></td><td rowspan="1">1522223908636</td><td rowspan="1">556</td></tr><tr class="passedeven"><td rowspan="1">com.loginradius.KuserReg</td><td><a href="#m9">kuserreg_positive</a></td><td rowspan="1">1522223909193</td><td rowspan="1">2063</td></tr><tr class="passedodd"><td rowspan="1">com.loginradius.SetPassword</td><td><a href="#m10">setpassword_positive</a></td><td rowspan="1">1522223911257</td><td rowspan="1">3517</td></tr><tr class="passedeven"><td rowspan="1">com.loginradius.SetUsername</td><td><a href="#m11">setusername_positive</a></td><td rowspan="1">1522223914775</td><td rowspan="1">4346</td></tr></tbody>
+</table>
+<h2>AuthApitest</h2><h3 id="m0">com.loginradius.GetAcessToken#getacesstoken</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+JSON path $ doesn&apos;t match.
+Expected: map containing [&quot;access_token&quot;-&gt;ANYTHING]
+  Actual: {error=Token field is mandatory. Please enter token}
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:760)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:251)
+	at com.jayway.restassured.specification.ResponseSpecification$content$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:190)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:234)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:264)
+	at com.loginradius.GetAcessToken.getacesstoken(GetAcessToken.java:64)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.loginradius.Authentication#authentication_positive</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.loginradius.CheckEmail#checkemail_positive</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.loginradius.Create#create_positive</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.loginradius.EditUser#edituser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.loginradius.ExcelReport#excelreport</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.loginradius.GetAuthKey#getauthkey_positive</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.loginradius.GetProfileUser#getprofile_positive</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.loginradius.KuserLogin#kuserlogin_positive</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.loginradius.KuserReg#kuserreg_positive</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.loginradius.SetPassword#setpassword_positive</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.loginradius.SetUsername#setusername_positive</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

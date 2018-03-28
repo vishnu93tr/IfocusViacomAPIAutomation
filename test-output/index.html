@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-example_suite_1">
+              <span class="suite-name border-failed">example suite 1</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-example_suite_1">
+                    <span>C:\Users\iFoucs02\eclipse-workspace\APITESTING\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-example_suite_1">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-example_suite_1">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-example_suite_1">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-example_suite_1">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-example_suite_1">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-example_suite_1">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods, 1 failed,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-example_suite_1" class="hide-methods failed suite-example_suite_1"> (hide)</a> <!-- hide-methods failed suite-example_suite_1 -->
+                      <a href="#" panel-name="suite-example_suite_1" class="show-methods failed suite-example_suite_1"> (show)</a> <!-- show-methods failed suite-example_suite_1 -->
+                    </span>
+                    <div class="method-list-content failed suite-example_suite_1">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-example_suite_1" title="com.loginradius.GetAcessToken" hash-for-method="getacesstoken">getacesstoken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-example_suite_1 -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-example_suite_1" class="hide-methods passed suite-example_suite_1"> (hide)</a> <!-- hide-methods passed suite-example_suite_1 -->
+                      <a href="#" panel-name="suite-example_suite_1" class="show-methods passed suite-example_suite_1"> (show)</a> <!-- show-methods passed suite-example_suite_1 -->
+                    </span>
+                    <div class="method-list-content passed suite-example_suite_1">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-example_suite_1" title="com.loginradius.Authentication" hash-for-method="authentication_positive">authentication_positive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-example_suite_1" title="com.loginradius.CheckEmail" hash-for-method="checkemail_positive">checkemail_positive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-example_suite_1" title="com.loginradius.Create" hash-for-method="create_positive">create_positive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-example_suite_1" title="com.loginradius.EditUser" hash-for-method="edituser">edituser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-example_suite_1" title="com.loginradius.ExcelReport" hash-for-method="excelreport">excelreport</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-example_suite_1" title="com.loginradius.GetAuthKey" hash-for-method="getauthkey_positive">getauthkey_positive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-example_suite_1" title="com.loginradius.GetProfileUser" hash-for-method="getprofile_positive">getprofile_positive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-example_suite_1" title="com.loginradius.KuserLogin" hash-for-method="kuserlogin_positive">kuserlogin_positive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-example_suite_1" title="com.loginradius.KuserReg" hash-for-method="kuserreg_positive">kuserreg_positive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-example_suite_1" title="com.loginradius.SetPassword" hash-for-method="setpassword_positive">setpassword_positive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-example_suite_1" title="com.loginradius.SetUsername" hash-for-method="setusername_positive">setusername_positive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-example_suite_1 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-example_suite_1" class="panel example_suite_1">
+          <div class="suite-example_suite_1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.loginradius.GetAcessToken</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getacesstoken">
+                  </a> <!-- getacesstoken -->
+                  <span class="method-name">getacesstoken</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+JSON path $ doesn&apos;t match.
+Expected: map containing [&quot;access_token&quot;-&gt;ANYTHING]
+  Actual: {error=Token field is mandatory. Please enter token}
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:760)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:251)
+	at com.jayway.restassured.specification.ResponseSpecification$content$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:190)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:234)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:264)
+	at com.loginradius.GetAcessToken.getacesstoken(GetAcessToken.java:64)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-example_suite_1-class-failed -->
+          <div class="suite-example_suite_1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.loginradius.CheckEmail</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkemail_positive">
+                  </a> <!-- checkemail_positive -->
+                  <span class="method-name">checkemail_positive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-example_suite_1-class-passed -->
+          <div class="suite-example_suite_1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.loginradius.SetUsername</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setusername_positive">
+                  </a> <!-- setusername_positive -->
+                  <span class="method-name">setusername_positive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-example_suite_1-class-passed -->
+          <div class="suite-example_suite_1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.loginradius.Authentication</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="authentication_positive">
+                  </a> <!-- authentication_positive -->
+                  <span class="method-name">authentication_positive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-example_suite_1-class-passed -->
+          <div class="suite-example_suite_1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.loginradius.Create</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="create_positive">
+                  </a> <!-- create_positive -->
+                  <span class="method-name">create_positive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-example_suite_1-class-passed -->
+          <div class="suite-example_suite_1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.loginradius.KuserLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="kuserlogin_positive">
+                  </a> <!-- kuserlogin_positive -->
+                  <span class="method-name">kuserlogin_positive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-example_suite_1-class-passed -->
+          <div class="suite-example_suite_1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.loginradius.SetPassword</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setpassword_positive">
+                  </a> <!-- setpassword_positive -->
+                  <span class="method-name">setpassword_positive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-example_suite_1-class-passed -->
+          <div class="suite-example_suite_1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.loginradius.KuserReg</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="kuserreg_positive">
+                  </a> <!-- kuserreg_positive -->
+                  <span class="method-name">kuserreg_positive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-example_suite_1-class-passed -->
+          <div class="suite-example_suite_1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.loginradius.ExcelReport</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="excelreport">
+                  </a> <!-- excelreport -->
+                  <span class="method-name">excelreport</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-example_suite_1-class-passed -->
+          <div class="suite-example_suite_1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.loginradius.EditUser</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="edituser">
+                  </a> <!-- edituser -->
+                  <span class="method-name">edituser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-example_suite_1-class-passed -->
+          <div class="suite-example_suite_1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.loginradius.GetAuthKey</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getauthkey_positive">
+                  </a> <!-- getauthkey_positive -->
+                  <span class="method-name">getauthkey_positive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-example_suite_1-class-passed -->
+          <div class="suite-example_suite_1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.loginradius.GetProfileUser</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getprofile_positive">
+                  </a> <!-- getprofile_positive -->
+                  <span class="method-name">getprofile_positive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-example_suite_1-class-passed -->
+        </div> <!-- panel example_suite_1 -->
+        <div panel-name="test-xml-example_suite_1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\iFoucs02\eclipse-workspace\APITESTING\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;-1&quot; name=&quot;example suite 1&quot;&gt;
+  &lt;test name=&quot;AuthApitest&quot;&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;com.loginradius&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.loginradius.Authentication&quot;/&gt;
+      &lt;class name=&quot;com.loginradius.CheckEmail&quot;/&gt;
+      &lt;class name=&quot;com.loginradius.Create&quot;/&gt;
+      &lt;class name=&quot;com.loginradius.EditUser&quot;/&gt;
+      &lt;class name=&quot;com.loginradius.ExcelReport&quot;/&gt;
+      &lt;class name=&quot;com.loginradius.GenericMethods&quot;/&gt;
+      &lt;class name=&quot;com.loginradius.GetAcessToken&quot;/&gt;
+      &lt;class name=&quot;com.loginradius.GetAuthKey&quot;/&gt;
+      &lt;class name=&quot;com.loginradius.GetProfileUser&quot;/&gt;
+      &lt;class name=&quot;com.loginradius.Imageupdate&quot;/&gt;
+      &lt;class name=&quot;com.loginradius.KuserLogin&quot;/&gt;
+      &lt;class name=&quot;com.loginradius.KuserReg&quot;/&gt;
+      &lt;class name=&quot;com.loginradius.SetPassword&quot;/&gt;
+      &lt;class name=&quot;com.loginradius.SetUsername&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AuthApitest --&gt;
+&lt;/suite&gt; &lt;!-- example suite 1 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-example_suite_1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for example suite 1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">AuthApitest (14 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-example_suite_1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for example suite 1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-example_suite_1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for example suite 1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_example_suite_1');
+function tableData_example_suite_1() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'excelreport')
+data.setCell(0, 2, 'com.loginradius.ExcelReport')
+data.setCell(0, 3, 5851);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'getauthkey_positive')
+data.setCell(1, 2, 'com.loginradius.GetAuthKey')
+data.setCell(1, 3, 4402);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'setusername_positive')
+data.setCell(2, 2, 'com.loginradius.SetUsername')
+data.setCell(2, 3, 4346);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'edituser')
+data.setCell(3, 2, 'com.loginradius.EditUser')
+data.setCell(3, 3, 4294);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'checkemail_positive')
+data.setCell(4, 2, 'com.loginradius.CheckEmail')
+data.setCell(4, 3, 4269);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'authentication_positive')
+data.setCell(5, 2, 'com.loginradius.Authentication')
+data.setCell(5, 3, 3681);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'setpassword_positive')
+data.setCell(6, 2, 'com.loginradius.SetPassword')
+data.setCell(6, 3, 3517);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'create_positive')
+data.setCell(7, 2, 'com.loginradius.Create')
+data.setCell(7, 3, 2948);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'kuserreg_positive')
+data.setCell(8, 2, 'com.loginradius.KuserReg')
+data.setCell(8, 3, 2063);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'getacesstoken')
+data.setCell(9, 2, 'com.loginradius.GetAcessToken')
+data.setCell(9, 3, 1866);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'getprofile_positive')
+data.setCell(10, 2, 'com.loginradius.GetProfileUser')
+data.setCell(10, 3, 1322);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'kuserlogin_positive')
+data.setCell(11, 2, 'com.loginradius.KuserLogin')
+data.setCell(11, 3, 556);
+window.suiteTableData['example_suite_1']= { tableData: data, tableDiv: 'times-div-example_suite_1'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 39 seconds</span>
+              <div id="times-div-example_suite_1">
+              </div> <!-- times-div-example_suite_1 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-example_suite_1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for example suite 1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-example_suite_1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.loginradius.Imageupdate</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">imageupdate_positive</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-example_suite_1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.loginradius.Authentication</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">authentication_positive</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.loginradius.CheckEmail</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkemail_positive</span>
+                <span class="method-start">3683 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.loginradius.Create</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">create_positive</span>
+                <span class="method-start">7953 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.loginradius.EditUser</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">edituser</span>
+                <span class="method-start">10902 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.loginradius.GetAcessToken</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getacesstoken</span>
+                <span class="method-start">15198 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.loginradius.GetAuthKey</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getauthkey_positive</span>
+                <span class="method-start">17067 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.loginradius.GetProfileUser</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getprofile_positive</span>
+                <span class="method-start">21470 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.loginradius.KuserLogin</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">kuserlogin_positive</span>
+                <span class="method-start">22793 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.loginradius.KuserReg</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">kuserreg_positive</span>
+                <span class="method-start">23350 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.loginradius.SetPassword</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">setpassword_positive</span>
+                <span class="method-start">25414 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.loginradius.SetUsername</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">setusername_positive</span>
+                <span class="method-start">28932 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.loginradius.ExcelReport</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">excelreport</span>
+                <span class="method-start">33279 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
